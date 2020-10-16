@@ -10,5 +10,7 @@ We then wrote python code to clip the lakes shapefile to the extent of the basin
 
 ### Repo contents
 flooding.py is a python script for use in ArcGIS that outputs a shapefile of special flood hazard areas in the basin. 
+
 my_Clip.py is a python script for use in ArcGIS that outputs the lakes in the basin. 
+
 lakes_myClip image is a PNG file showing the output of my_Clip.py, displayed in ArcMap
