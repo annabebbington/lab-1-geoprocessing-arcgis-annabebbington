@@ -1,5 +1,8 @@
-# Name: YOUR NAME HERE 
-# Python Version: ENTER ASSIGNMENT TITLE HERE.
-# Description: ENTER A DESCRIIPTION ABOUT WHAT YOUR CODE IS SUPPOSED TO DO HERE: DESCRIBE INPUTS / OUTPUTS.
-
-Leave the lines of comment code, above, but add your personal details. Then replace these two lines of code with your new code! 
+'''
+Anna Bebbington
+Created: 16/10/2020
+Description: writing a script for Lab 1, geoprocessing using a code editor
+'''
+import arcpy
+arcpy.env.workspace = "C:\Programming for GIS\Lab_1_Geoprocessing_ArcGIS"
+arcpy.Clip_analysis("Data_Lab_1_Geoprocessing_ArcGIS/lakes.shp","Data_Lab_1_Geoprocessing_ArcGIS/basin.shp","Results/lakes_myClip.shp")
