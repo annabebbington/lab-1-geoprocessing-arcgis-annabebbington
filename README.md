@@ -1,16 +1,14 @@
 # LAB 1: GEOPROCESSING IN ARCGIS
-Due: 23 OCT 2020
 
-## THE DATA
-In our class OneDrive, find the [Lab_1_Geoprocessing_ArcGIS folder](https://clarkuedu-my.sharepoint.com/:f:/g/personal/shroberts_clarku_edu/EvQL9wW9T2NGuwJO7_q35tQBqIp4PtuxdLlEHoE_W33hnQ?e=2H3R2z). In this you'll find 3 sub-folders: 
-- _1. Lab 1 instructions_ contains a Word doc with all the tutorial instructions you need. 
-- _Data_Lab_1_Geoprocessing_ArcGIS_ contains the data you need in the form of .shp files.
-- _Results_ is an empty folder you can use to save your outputs to. 
+This lab explored the different ways to code in the ArcGIS environment.
 
-##  WHAT TO SUBMIT
-You will submit two scripts, one screenshot, and a short (150 – 250 word) write up as your README file. Be sure to read the lab sheet carefully since it explains which scripts you need to save! Specifically, your repo should include: 
-- `file.flooding.py` from part 2
-- `my_clip.py` from part 3, and 
-- an image of the lakes_myClip layer from part 3. If you don't know how to add an image to your Github readme you can [view this video](https://www.youtube.com/watch?reload=9&v=hHbWF1Bvgf4) or [see the instructions at the bottom of this readme](https://github.com/Shadrock/code-snippets).
+We began by using the ModelBuilder feature in ArcMap to clip the floodzone shapefile to the basin shapefile, and then select for areas in the special flood hazard areas. We then exported this model to python script, which we then were able to open in a code editor. See flooding.py in the repo. 
 
-Your read me should explain briefly what you did in the lab and clearly list the contents of the repo and explain what it is so that someone who is not in the class can look at your repo and understand both the lab and the outputs. In example, “file.flooding.py is a Python script for use in ArcMap. The script takes some inputs and then outputs something else…” For guidance on things you should include in your readme, or how to structure it nicely using markdown, [see this web page](https://www.makeareadme.com/). 
+We used the the Python window in ArcMap to write a script to clip the soils shapefile to the basin shapefile, which output a shapefile of soils in the extent of the basin.
+
+We then wrote python code to clip the lakes shapefile to the extent of the basin shapefile, using a code editor outside of the ArcGIS workspace. See my_Clip.py in the repo.
+
+### Repo contents
+flooding.py is a python script for use in ArcGIS that outputs a shapefile of special flood hazard areas in the basin. 
+my_Clip.py is a python script for use in ArcGIS that outputs the lakes in the basin. 
+lakes_myClip image is a PNG file showing the output of my_Clip.py, displayed in ArcMap
